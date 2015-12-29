@@ -59,8 +59,6 @@ $(window).load(function() { //start after HTML, images have loaded
 		imgCount = $('#slideshow-container').attr("alt")*1;
 
 		$('#slideshowDot-'+onImg).css("opacity", "1");
-		//$('.rotimg').eq(onImg).fadeIn(500);
-		//loop through the items
 		createInterval();
 
 		function updateSliderHeight() { 

@@ -296,16 +296,51 @@ h2 {
 		width: 33.33%;
 		}
 	
-	.span div div {
-		background-color: #eee;
+	.span div div {	
+		/* background-color: #eee; */
 		border-top: 1px solid #FFFFFF;
 		border-right: 0px solid #FFFFFF;
 		border-bottom: 0px solid #FFFFFF;
 		border-left: 1px solid #FFFFFF;
 		}
 	.span div div div {		
-		padding: 15px;	
+		padding: 15px;
 	}
 	.spanauto {
 		width: auto;
 		}
+
+
+/* Colors */
+
+.bg-white {
+	background-color: #FFF !important;	
+	}
+
+.bg-silver {
+	background-color: #EEE !important;	
+	}
+
+.fg-black {
+	color: #000 !important;
+	}
+
+
+/* Folding Entities */
+
+.folder-file {
+	display: none;
+	}
+
+.foldhead {
+	display: block;
+	font-size: 1.5em;
+	color: black;
+	padding-bottom: 10px;
+	cursor: pointer;
+	}
+
+.folder-file {
+	padding: 20px;
+	line-height: 20px;
+	}

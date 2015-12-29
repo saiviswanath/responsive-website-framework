@@ -13,3 +13,8 @@ design with a responsive slider and grid-based layout.
 
 There will eventually be a way to adjust just a few variables to alter
 the overall layout that will be used, font sizes, etc.
+
+=======================================================
+
+View a Live Demo:
+http://www.seltice.com/responsivedesign

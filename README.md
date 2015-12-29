@@ -1,6 +1,4 @@
-# responsive-website-framework
-
-Responsive Website Framework
+# Responsive Website Framework
 by Seltice Systems LLC
 
 Copyright 2015, MIT License

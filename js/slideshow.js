@@ -1,3 +1,5 @@
+/* slideshow.js MIT Licensed */
+
 var fadeTime = 3000
 var slideSpeed = 500
 var sliderType = "slide"; // or "fade"
@@ -62,11 +64,11 @@ $(window).load(function() { //start after HTML, images have loaded
 		createInterval();
 
 		function updateSliderHeight() { 
-				$(".fadein").css("height", $(".rotimg img").height() + "px");				
+				$(".fadein").css("height", $("#slide"+(onImg+1)).height() + "px");				
 				$("#slideshow-arrow-left").css("margin-left", "20px");
-				$("#slideshow-arrow-right").css("margin-left", (($(".rotimg img").width()*1) - (($("#slideshow-arrow-right").width()*1) + 20)) + "px");
-				$("#slideshow-arrow-right").css("margin-top", ( (($(".rotimg img").height()*1) / 2) - (($("#slideshow-arrow-right").height()*1)/2)) + "px");
-				$("#slideshow-arrow-left").css("margin-top", ( (($(".rotimg img").height()*1) / 2) - (($("#slideshow-arrow-left").height()*1)/2)) + "px");
+				$("#slideshow-arrow-right").css("margin-left", (($("#slide"+(onImg+1)).width()*1) - (($("#slideshow-arrow-right").width()*1) + 20)) + "px");
+				$("#slideshow-arrow-right").css("margin-top", ( (($("#slide"+(onImg+1)).height()*1) / 2) - (($("#slideshow-arrow-right").height()*1)/2)) + "px");
+				$("#slideshow-arrow-left").css("margin-top", ( (($("#slide"+(onImg+1)).height()*1) / 2) - (($("#slideshow-arrow-left").height()*1)/2)) + "px");
 				$("#slideshow-arrow-left").css("display", "block");
 				$("#slideshow-arrow-right").css("display", "block");
 			}

@@ -2,10 +2,11 @@
 
 
 $(document).ready(function(){
-	$( "div.folder" ).click(function() {
+	$( "span.folder-head" ).click(function() {
 		
-		element = $(".folder-file", this);
-		
+		console.log("here");
+		element = $(".folder-file", $(this).parent());
+				
 		if (element.is(":visible"))
 		{
 			element.slideUp(); // show();

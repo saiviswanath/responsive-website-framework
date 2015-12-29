@@ -20,3 +20,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
+
+EXCEPTIONS:
+
+Where indicated in the source files, code may fall under a separate license,
+such as CC-BY-SA.  
+
+An example of this is a block of code in the js/main.js file
+where we wrote code to handle older browsers, but got help for this from a
+StackOverflow.com discussion.
+
+Images with 3rd party logos are NOT MIT Licensed and we are not the Copyright
+holder of the logos themselves. These include images with these logos:
+
+  Facebook
+  Twitter
+  Google
+  LinkedIn
+  Pinterest

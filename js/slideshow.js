@@ -1,11 +1,13 @@
 /* slideshow.js MIT Licensed */
 
+var freezeAfterClick = true; // After the user clicks a control, stop the slideshow
 var fadeTime = 3000
 var slideSpeed = 500
 var sliderType = "slide"; // or "fade"
 var imgCount; // number of images here.
 var onImg = 0;
 var slideshowLoop;
+
 
 function doSlideshowFade(which,dir)
 {
@@ -89,8 +91,13 @@ function slideSwitch(which,slideTo)
 		console.log(which);
 	}
 	clearInterval(slideshowLoop);
-	doSlideshowFade(which,dir);	
-	createInterval();
+	doSlideshowFade(which,dir);
+	
+	if (freezeAfterClick==false)
+	{
+		createInterval();
+	}
+	
 	
 }
 

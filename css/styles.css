@@ -141,10 +141,10 @@ p {
 	text-align: left;
 	padding: 0;
 	margin: 0px 0px 30px 0px;
-	width: auto;
+	width: 100%;
 	float: none;
 	font-size: 1.0em;
-	line-height: 1.6em;
+	line-height: 1.6em;	
 	}
 
 ol {
@@ -451,17 +451,46 @@ li {
 		display: table-cell;
 		width: 33.33%;
 		}
+
+	.span25 {
+		display: table-cell;
+		width: 25%;
+		}
+
+	.span50 {
+		display: table-cell;
+		width: 50%;
+		}
+
+	.span75 {
+		display: table-cell;
+		width: 75%;
+		}
+
+	.span100 {
+		display: table-cell;
+		width: 100%;
+		}
 	
 	.span div div {	
 		/* background-color: #eee; */
-		border-top: 1px solid #FFFFFF;
-		border-right: 0px solid #FFFFFF;
-		border-bottom: 0px solid #FFFFFF;
-		border-left: 1px solid #FFFFFF;
+		/* border-top: 1px solid #FFFFFF; */
+		/* border-right: 0px solid #FFFFFF; */
+		/* border-bottom: 0px solid #FFFFFF; */
+		/* border-left: 1px solid #FFFFFF; */
+		/* border: 1px solid #FFF; */
 		}
-	.span div div div {		
-		padding: 15px;
+	.span div div div {	
+				
 	}
+
+	.spancol-internal {
+		display: block;
+		width: auto;	
+		float: none;
+		padding: 15px;
+		}
+
 	.spanauto {
 		width: auto;
 		}
@@ -481,6 +510,37 @@ li {
 	color: #000 !important;
 	}
 
+.fg-white {
+	color: #FFF !important;
+	}
+
+.text-align-left {
+	text-align: left;
+	}
+
+.text-align-center {
+	text-align: center;
+	}
+
+.text-align-right {
+	text-align: right;
+	}
+
+.float-left {
+	float: left;
+	}
+
+.float-right {
+	float: right;
+	}
+
+.float-center {
+	display: table;
+	overflow: hidden;
+	width: auto;
+	float: none;
+	margin: 0 auto;
+	}
 
 /* Folding Entities */
 
@@ -492,7 +552,7 @@ li {
 	display: block;
 	font-size: 1.5em;
 	color: black;
-	padding-bottom: 10px;
+	padding: 10px;
 	cursor: pointer;
 	}
 
@@ -511,8 +571,9 @@ li {
 	.backtotop-container {
 		display: block;
 		position: fixed;
-		width: 100%;
+		width: 60px;
 		bottom: 20px;
+		right: 0;
 	}
 	.backtotop-container a {
 		display: block;
@@ -524,6 +585,96 @@ li {
 		opacity: 0.2;
 		}
 }
+
+/* Form elements */
+
+::-webkit-input-placeholder {
+   color: #aaa;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #aaa;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #aaa;  
+}
+:-ms-input-placeholder {  
+   color: #aaa;  
+}
+
+input[type="text"] {
+	display: block;
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea {
+	display: block;
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+	min-height: 100px;
+	font-family: sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+select {
+	display: block;
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.options {
+	/* alter option style here, having trouble with cross browser support. */
+}
+
+.select-multiple {
+	min-height: 100px;
+}
+
+input[type="radio"] {
+	display: inline;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+input[type="checkbox"] {
+	display: inline;
+	float: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"],input[type="button"] {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	border: none;
+	padding: 15px 0px;
+	font-size: 1.2em;
+	background-color: #6699ff;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,input[type="button"]:hover {
+	background-color: #97b9ff;
+	}
 
 /* To override an initially hidden element */
 .show {

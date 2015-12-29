@@ -649,6 +649,9 @@ input[type="radio"] {
 	float: none;
 	margin: 0;
 	padding: 0;
+	margin-top: -3px;
+    vertical-align: middle;
+	cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -656,7 +659,9 @@ input[type="checkbox"] {
 	float: none;
 	margin: 0;
 	padding: 0;
-	border: 1px solid #ccc;
+    margin-top: -3px;
+    vertical-align: middle;
+	cursor: pointer;
 }
 
 input[type="submit"],input[type="button"] {

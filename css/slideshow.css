@@ -1,0 +1,85 @@
+#slideshow-container {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	}
+	
+#slideshow-container div.fadein { display: block; position:relative; width:100%; height:auto; overflow: hidden; z-index: 1; }
+#slideshow-container div.fadein div { position:absolute; width: 100%; height: auto; left:0; top:0; display: none; overflow: hidden; }
+#slideshow-container div.fadein div img { position: relative; width: 100%; height: auto; left: 0; top: 0; display: block; z-index: 1;}
+
+#slideshow-container div.slide-arrow {
+	display: block;
+	position: absolute;
+	z-index: 9000;
+	top: 0;
+	left: 0;
+	opacity: 0.4;
+	}
+
+#slideshow-container div.slide-arrow-square {
+	width: 50px;
+	height: 100px;
+	}
+
+#slideshow-container div.slide-arrow-square-right {
+	display: none;
+	top: 0px;
+	right: 0px;
+}
+
+#slideshow-container div.slide-arrow-square-left {
+	display: none;
+	top: 0px;
+	left: 0px;
+}
+
+#slideshow-dots {
+	display: block;
+	width: 100%;
+	position: absolute;
+	z-index: 9000;
+	text-align: center;
+	margin-top: -40px;
+}
+
+#slideshow-dots a img {
+	margin: 0 3px;
+	opacity: 0.4;
+}
+
+.infoblock-left-container {
+	position: absolute; width: 20%; height: 100%; z-index: 5; background-color: #000; color: #FFF; padding: 50px; opacity: 0.5;
+	}
+.infoblock-left-content {
+	position: absolute; width: 20%; height: 100%; z-index: 6; padding: 50px; opacity: 1; color: #FFF;
+	line-height: 20px;
+	}
+
+.infoblock-right-container {
+	position: absolute; width: 20%; height: 100%; z-index: 5; background-color: #000; color: #FFF; padding: 50px; opacity: 0.5; right: 0;
+	}
+.infoblock-right-content {
+	position: absolute; width: 20%; height: 100%; z-index: 6; padding: 50px; opacity: 1; color: #FFF; right: 0;
+	line-height: 20px;
+	}
+
+.infoblock-top-container {
+	position: absolute; width: 100%; height: 60px; z-index: 5; background-color: #000; color: #FFF;  opacity: 0.5; top: 0;
+	}
+.infoblock-top-content {
+	position: absolute; width: 100%; height: 60px; z-index: 6;  opacity: 1; color: #FFF; top: 0;
+	line-height: 60px;
+	text-align: center;
+	}
+
+.infoblock-bottom-container {
+	position: absolute; width: 100%; height: 60px; z-index: 5; background-color: #000; color: #FFF;  opacity: 0.5; bottom: 0;
+	}
+.infoblock-bottom-content {
+	position: absolute; width: 100%; height: 60px; z-index: 6;  opacity: 1; color: #FFF; bottom: 0;
+	line-height: 60px;
+	text-align: center;
+	}
+
+

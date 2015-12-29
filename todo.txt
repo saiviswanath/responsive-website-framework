@@ -1,0 +1,34 @@
+TODO
+===========================================================
+
+BUG:
+
+Slideshow is dissappearing when I resize the browser!!!!
+
+
+
+TODO:
+
+Connect entire page to a javascript config to define padding or initial spacing issues.
+
+Double check responsiveness
+
+Create mobile menu
+
+Sticky nav at top
+
+Back to top sticky arrow at bottom
+
+Form elements
+
+Data grids
+
+Folding data like FAQ or more info
+
+
+
+
+DONE:
+
+xxx Slideshow should be able to swipe in and out, not just fade
+xxx Slideshow should be able to include Divs and not just images, so replace images with div

@@ -1,0 +1,311 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	vertical-align: bottom;
+}
+html {
+overflow-y: scroll;
+}
+strong {
+	font-weight: bold;
+}
+i {
+	font-style: italic;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 13px;
+	}
+
+
+/* Headings */
+
+h2 {
+	text-align: center;
+	margin: 20px 0px;
+	width: auto;
+	float: none;
+	font-size: 40px;
+	}
+
+
+/* Top Nav */
+
+.top-nav {
+	background-color: #333;
+	width: auto;
+	height: 80px;
+}
+
+.top-nav div {
+	overflow: visible;
+	max-width: none;
+	margin: 0 auto;
+}
+
+.hamburger {
+	display: block;
+	height: 20px;
+	width: 40px;
+	float: right;
+	position: relative;
+	overflow: hidden;
+	padding-top: 18px;
+	padding-right: 18px;
+	}
+
+.hamburger img {
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+
+.nav-center {
+	display: table;
+	margin: 0 auto;
+	float: none;
+}
+
+.nav-left {
+	display: block;
+	margin: 0;
+	float: left;
+}
+
+.nav-right {
+	display: block;
+	margin: 0;
+	float: right;
+}
+
+
+.top-nav div ul {
+	display: none;
+	position: relative;
+	z-index: 10000;
+	overflow: visible;
+	}
+
+.top-nav div ul.nav-icons {
+	display: none;
+	}
+
+.top-nav div ul.nav-icons li {
+	float: left;
+	margin-top: 25px;
+}
+
+.top-nav div ul.nav-icons li a img {
+	margin-left: 5px;
+}
+
+.top-nav div ul.nav-links li {
+	float: none;	
+}
+
+.top-nav div ul.nav-links li a {
+	display: block;
+	color: white;	
+	float: left;
+	line-height: 80px;	
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+.top-nav div ul.nav-links-center li a {
+	margin: 0px 60px 0px 30px;
+}
+
+.top-nav div ul.nav-links-left li a {
+	margin: 0px 70px 0px 0px;
+}
+
+.top-nav div ul.nav-links-right li a {
+	margin: 0px 0px 0px 70px;
+}
+
+.top-nav div ul.nav-links li ul {
+	margin-left: -30px;
+}
+
+.top-nav div ul.nav-links li ul li a {
+	margin-left: 30px;
+}
+
+
+
+.top-nav div ul.nav-links li ul {
+	display: none;
+}
+
+
+@media screen and (min-width: 740px) {
+
+	.top-nav div ul.nav-icons {
+		display: block;
+	}
+
+
+}
+
+@media screen and (min-width: 600px) {
+
+	.top-nav div ul {
+		display: block;
+		}
+
+	
+	.top-nav div {
+		width: auto;
+		padding: 0px 10px;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.top-nav div ul.nav-links li {
+		float: left;
+		overflow: visible;
+	}
+
+	.top-nav div ul.nav-links li ul {
+		display: block;
+		visibility: hidden;
+		position: absolute;
+		z-index: 10000;
+		opacity:0;
+	}
+	
+	.top-nav div ul.nav-links li:hover ul {
+		display: block;
+		visibility: visible;
+		position: absolute;
+		background-color: #333;	
+		top: 80px;
+		opacity:0.8;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+	}
+
+	.top-nav div ul.nav-links li:hover ul li {
+		line-height: 40px;
+	}
+
+	.top-nav div ul.nav-links li:hover ul li a {
+		line-height: 40px;
+	}
+	
+	.top-nav div ul.nav-links li:hover ul li {
+		display: block;		
+		float: none;		
+		padding: 10px 20px 10px 0px;
+		overflow: hidden;
+	}
+
+	.top-nav div ul.nav-links li:hover ul li:hover {
+		background-color: #000;
+	}
+
+	.top-nav div ul.nav-links li:hover ul li:hover a {
+		background-color: #000;
+	}
+
+	
+
+}
+
+
+
+
+/* Grid Layouts */
+
+.spans {
+		display: block;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-top: 1px;
+		}
+	.span {
+		display: table;
+		width: 100%;
+		position: relative;
+		border-collapse:separate;
+		border-spacing: 0px;
+		}
+	.spanrow {
+		display: table-row;		
+		}
+	.spancol {
+		display: table-cell;
+		}
+	
+	.span66 {
+		display: table-cell;
+		width: 66.66%;
+		}
+
+	.span33 {
+		display: table-cell;
+		width: 33.33%;
+		}
+	
+	.span div div {
+		background-color: #eee;
+		border-top: 1px solid #FFFFFF;
+		border-right: 0px solid #FFFFFF;
+		border-bottom: 0px solid #FFFFFF;
+		border-left: 1px solid #FFFFFF;
+		}
+	.span div div div {		
+		padding: 15px;	
+	}
+	.spanauto {
+		width: auto;
+		}

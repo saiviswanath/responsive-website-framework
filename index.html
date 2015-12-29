@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">  
+  
+  <title>Responsive Website</title>  
+  <meta name="Description" content="My fully responsive website framework with everything I need!">
+  <meta name="Keywords" content="responsive, css, javascript, html">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="stylesheet" href="css/styles.css" type="text/css" /> <!-- primary style sheet -->
+  <link rel="stylesheet" href="css/slideshow.css" type="text/css" /> <!-- for the responsive slideshow -->
+ 
+  <script language="javascript" src="js/jquery-1.11.3.min.js"></script> <!-- jquery is used here mostly for resizing and effects -->
+  <script language="javascript" src="js/jquery-ui.min.js"></script> <!-- jquery UI for slider and effects -->  
+  <script language="javascript" src="js/respond.js"></script> <!-- to make media queries work cross-browser -->
+  <script language="javascript" src="js/main.js"></script>
+
+ </head>
+ <body>
+
+	<!-- Navigation -->
+	<div class="top-nav">
+		<div>
+			<div class="top-nav-wrapper">
+				<div class="hamburger"><img src="img/hamburger.png" border="0" /></div>
+				<ul class="nav-left nav-links nav-links-left">
+					<li><a href="#">Home</a>
+					<li><a href="#">About</a>
+					<li><a href="#">Services</a>
+						<ul>
+							<li><a href="#">Create Websites</a>
+							<li><a href="#">Perform SEO</a>
+							<li><a href="#">Register Domains</a>
+							<li><a href="#">Host Websites</a>
+						</ul>
+					<li><a href="#">Contact</a>
+				</ul>
+				<ul class="nav-right nav-icons">
+					<li><a href="#"><img src="img/facebook_small.png" border="0" width="32" height="32" /></a>
+					<li><a href="#"><img src="img/twitter_small.png" border="0" width="32" height="32" /></a>
+					<li><a href="#"><img src="img/pinterest_small.png" border="0" width="32" height="32" /></a>
+					<li><a href="#"><img src="img/linkedin_small.png" border="0" width="32" height="32" /></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+  
+    <!-- Slideshow -->
+	<div id="slideshow-container" alt="4">
+		<div class="fadein">
+			<div class="rotimg" style="display: block;">
+				<span class="infoblock-left-container"></span>
+				<span class="infoblock-left-content">The slideshow has LEFT the building ladies and gentlemen.</span>
+				<img src="img/slide1.jpg" />
+			</div>
+			<div class="rotimg">
+				<span class="infoblock-right-container"></span>
+				<span class="infoblock-right-content">The second slide is sure RIGHT about one thing, it's before the third slide.</span>
+				<img src="img/slide2.jpg"  />
+			</div>
+			<div class="rotimg">
+				<span class="infoblock-top-container"></span>
+				<span class="infoblock-top-content">This slide is TOPS with me!</span>
+				<img src="img/slide3.jpg"  />
+			</div>
+			<div class="rotimg">
+				<span class="infoblock-bottom-container"></span>
+				<span class="infoblock-bottom-content">These slider jokes have hit rock BOTTOM.  Probably don't want to show the dots with me tho.</span>
+				<img src="img/slide4.jpg"  />
+			</div>
+		</div>
+		<div id="slideshow-arrow-left" class="slide-arrow slide-arrow-square slide-arrow-square-left"><a href="#" onclick="slideSwitch(-1); return false;"><img src="img/arrow_left_square_white.png" border="0" width="50" height="100" /></a></div>
+		<div id="slideshow-arrow-right" class="slide-arrow slide-arrow-square slide-arrow-square-right"><a href="#" onclick="slideSwitch(1); return false;"><img src="img/arrow_right_square_white.png" border="0" width="50" height="100" /></a></div>
+		<div id="slideshow-dots">			
+			<a href="#" onclick="slideSwitch(0,0); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-0" /></a>
+			<a href="#" onclick="slideSwitch(0,1); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-1" /></a>
+			<a href="#" onclick="slideSwitch(0,2); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-2" /></a>
+			<a href="#" onclick="slideSwitch(0,3); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-3" /></a>			
+		</div>
+	</div>
+	<script language="javascript" src="js/slideshow.js" ></script>
+
+	<style>
+	
+	
+	</style>
+
+	<!-- Grid Layouts -->
+	<h2>Full Width Grid Layouts</h2>
+	<div class="spans">
+		
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>1 Column</div></div>
+			</div>	
+		</div>
+		
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>2 Even Columns</div></div>
+				<div class="spancol"><div>2 Even Columns</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>3 Even Columns</div></div>
+				<div class="spancol"><div>3 Even Columns</div></div>
+				<div class="spancol"><div>3 Even Columns</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>4 Even Columns</div></div>
+				<div class="spancol"><div>4 Even Columns</div></div>
+				<div class="spancol"><div>4 Even Columns</div></div>
+				<div class="spancol"><div>4 Even Columns</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span66"><div>2 Columns Elastic Left</div></div>
+				<div class="span33"><div>2 Columns Elastic Left</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span33"><div>2 Columns Elastic Right</div></div>
+				<div class="span66"><div>2 Columns Elastic Right</div></div>
+			</div>
+		</div>
+
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span33" style="width: 400px;"><div>2 Columns Fixed Left</div></div>
+				<div class="span66 spanauto"><div>2 Columns Fixed Left</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span66 spanauto"><div>2 Columns Fixed Right</div></div>
+				<div class="span33" style="width: 400px;"><div>2 Columns Fixed Right</div></div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- Grid Layouts with Max Width of 960px -->
+	<h2>Max 1200px Grid Layouts</h2>
+	<div class="spans" style="max-width: 1200px;">
+		
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>1 Column</div></div>
+			</div>	
+		</div>
+		
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>2 Even Columns</div></div>
+				<div class="spancol"><div>2 Even Columns</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>3 Even Columns</div></div>
+				<div class="spancol"><div>3 Even Columns</div></div>
+				<div class="spancol"><div>3 Even Columns</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol"><div>4 Even Columns</div></div>
+				<div class="spancol"><div>4 Even Columns</div></div>
+				<div class="spancol"><div>4 Even Columns</div></div>
+				<div class="spancol"><div>4 Even Columns</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span66"><div>2 Columns Elastic Left</div></div>
+				<div class="span33"><div>2 Columns Elastic Left</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span33"><div>2 Columns Elastic Right</div></div>
+				<div class="span66"><div>2 Columns Elastic Right</div></div>
+			</div>
+		</div>
+
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span33" style="width: 400px;"><div>2 Columns Fixed Left</div></div>
+				<div class="span66 spanauto"><div>2 Columns Fixed Left</div></div>
+			</div>
+		</div>
+
+		<div class="span">
+			<div class="spanrow">
+				<div class="span66 spanauto"><div>2 Columns Fixed Right</div></div>
+				<div class="span33" style="width: 400px;"><div>2 Columns Fixed Right</div></div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Forms -->
+	<h2>Form Elements</h2>
+
+ </body>
+</html>

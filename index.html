@@ -16,16 +16,18 @@
     
   <link rel="stylesheet" href="css/styles.css" type="text/css" /> <!-- primary style sheet -->
   <link rel="stylesheet" href="css/slideshow.css" type="text/css" /> <!-- for the responsive slideshow -->
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css" /> <!-- for the clickable image lightbox -->
  
   <script language="javascript" src="js/jquery-1.11.3.min.js"></script> <!-- jquery is used here mostly for resizing and effects -->
   <script language="javascript" src="js/jquery-ui.min.js"></script> <!-- jquery UI for slider and effects -->  
   <script language="javascript" src="js/respond.js"></script> <!-- to make media queries work cross-browser -->
   <script language="javascript" src="js/main.js"></script>
   <script language="javascript" src="js/unfold.js"></script> <!-- Script to unfold and show hidden entities -->
+  <script language="javascript" src="js/lightbox.js"></script> <!-- For showing images as overlay -->
 
  </head>
  <body>
-
+<div id="site-container">
 	<!-- Navigation -->
 	<div class="top-nav-fixed-spacer"></div><!-- Remove this if not fixing top nav -->
 	<div class="top-nav top-nav-fixed">
@@ -417,7 +419,22 @@
 
 	<p>&nbsp;</p>
 
-	<!-- Forms -->
+	<!-- Lightbox  -->
+	<h1 class="center">Lightbox</h1>
+	<div class="spans" style="max-width: 1200px;">
+		
+		<div class="span">
+			<div class="spanrow">
+				<span class="span33 center"><img src="img/img1.jpg" border="0" class="lightbox-image" style="width: 90%;"/></span>
+				<span class="span33 center"><img src="img/img2.jpg" border="0" class="lightbox-image" style="width: 90%;"/></span>
+				<span class="span33 center"><img src="img/img3.jpg" border="0" class="lightbox-image" style="width: 90%;"/></span>
+			</div>
+		</div>
+	</div>
+
+	<p>&nbsp;</p>
+
+	<!-- Foooter -->
 	<div class="spans" style="background-color: #333;">
 		
 		<div class="span">
@@ -471,6 +488,11 @@
 
 	<!-- Back to Top -->
 	<div class="backtotop-container"><a href="#" onclick="scrollToTop(); return false;"><img src="img/backtotop.png" border="0" /></a></div>
-
+	<div class="lightbox-overlay"></div>
+	<div class="lightbox-container" onclick="hideLightbox(); return false;">
+		<div class="lightbox-image-container"><img id="lightbox-final-image" src="" border="0" /></div>
+	</div>
+ </div>
+ 
  </body>
 </html>

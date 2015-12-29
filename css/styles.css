@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -46,7 +47,8 @@ img {
 	vertical-align: bottom;
 }
 html {
-overflow-y: scroll;
+	overflow-y: scroll;
+	height: 100%;
 }
 strong {
 	font-weight: bold;
@@ -63,6 +65,13 @@ body {
 	text-align: center;
 	}
 
+
+#site-container {
+	display: block;
+	position: relative;
+	overflow: auto;
+	width: auto;
+	}
 
 /* Headings */
 

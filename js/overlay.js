@@ -8,7 +8,7 @@ function showOverlay(which)
 	var windowHeight = $( window ).height()*1;
 	var divHeight =  $("#"+which).height();
 
-	$("#"+which).css("top", ((windowHeight / 2) - (divHeight)) + "px");
+	$("#"+which).css("top", ((windowHeight / 2) - (divHeight/2)) + "px");
 
 }
 

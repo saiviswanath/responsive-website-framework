@@ -65,6 +65,10 @@ body {
 	text-align: center;
 	}
 
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 
 #site-container {
 	display: block;
@@ -529,7 +533,91 @@ li {
 
 /* Grid Layouts */
 
+
 .spans {
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 1px;
+	
+	}
+.span {
+	display: block;
+	width: auto;
+	position: relative;
+	border-collapse:separate;
+	border-spacing: 0px;
+	}
+.spanrow {
+	display: block;		
+	}
+.spancol {
+	display: block;
+	margin-bottom: 20px;
+	}
+
+.span66 {
+	display: block;
+	width: auto;
+	margin-bottom: 20px;
+	}
+
+.span33 {
+	display: block;
+	width: auto;
+	margin-bottom: 20px;
+	}
+
+.span25 {
+	display: block;
+	width: auto;
+	margin-bottom: 20px;
+	}
+
+.span50 {
+	display: block;
+	width: auto;
+	margin-bottom: 20px;
+	}
+
+.span75 {
+	display: block;
+	width: auto;
+	margin-bottom: 20px;
+	}
+
+.span100 {
+	display: block;
+	width: auto;
+	margin-bottom: 20px;
+	}
+
+.span div div {	
+	/* background-color: #eee; */
+	/* border-top: 1px solid #FFFFFF; */
+	/* border-right: 0px solid #FFFFFF; */
+	/* border-bottom: 0px solid #FFFFFF; */
+	/* border-left: 1px solid #FFFFFF; */
+	/* border: 1px solid #FFF; */
+	}
+.span div div div {	
+			
+}
+
+.spancol-internal {
+	display: block;
+	width: auto;	
+	float: none;
+	padding: 15px;
+	}
+
+.spanauto {
+	width: auto;
+	}
+
+@media screen and (min-width: 600px) {
+
+	.spans {
 		display: block;
 		overflow: hidden;
 		margin: 0 auto;
@@ -547,36 +635,43 @@ li {
 		}
 	.spancol {
 		display: table-cell;
+		margin-bottom: 0px;
 		}
 	
 	.span66 {
 		display: table-cell;
 		width: 66.66%;
+		margin-bottom: 0px;
 		}
 
 	.span33 {
 		display: table-cell;
 		width: 33.33%;
+		margin-bottom: 0px;
 		}
 
 	.span25 {
 		display: table-cell;
 		width: 25%;
+		margin-bottom: 0px;
 		}
 
 	.span50 {
 		display: table-cell;
 		width: 50%;
+		margin-bottom: 0px;
 		}
 
 	.span75 {
 		display: table-cell;
 		width: 75%;
+		margin-bottom: 0px;
 		}
 
 	.span100 {
 		display: table-cell;
 		width: 100%;
+		margin-bottom: 0px;
 		}
 	
 	.span div div {	
@@ -602,6 +697,7 @@ li {
 		width: auto;
 		}
 
+}
 
 /* Colors */
 

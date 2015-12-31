@@ -1,0 +1,13 @@
+#call-to-action {
+	display: block;
+	position: relative;	
+	overflow: visible;
+	width: 800px;
+	max-width: 80%;
+	margin: 0 auto;
+	height: auto;
+	max-height: 80%;
+	background-color: white;
+	padding: 30px;
+	line-height: 50px;
+	}

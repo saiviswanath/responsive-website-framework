@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css" /> <!-- primary style sheet -->
   <link rel="stylesheet" href="css/slideshow.css" type="text/css" /> <!-- for the responsive slideshow -->
   <link rel="stylesheet" href="css/lightbox.css" type="text/css" /> <!-- for the clickable image lightbox -->
+  <link rel="stylesheet" href="css/overlay.css" type="text/css" /> <!-- for displaying an overlay -->
+  <link rel="stylesheet" href="css/custom.css" type="text/css" /> <!-- for overrides, or your additional formatting css -->
  
   <script language="javascript" src="js/jquery-1.11.3.min.js"></script> <!-- jquery is used here mostly for resizing and effects -->
   <script language="javascript" src="js/jquery-ui.min.js"></script> <!-- jquery UI for slider and effects -->  
@@ -24,6 +26,7 @@
   <script language="javascript" src="js/main.js"></script>
   <script language="javascript" src="js/unfold.js"></script> <!-- Script to unfold and show hidden entities -->
   <script language="javascript" src="js/lightbox.js"></script> <!-- For showing images as overlay -->
+  <script language="javascript" src="js/overlay.js"></script> <!-- For showing an overlay with form or more. -->
 
  </head>
  <body>
@@ -63,7 +66,8 @@
 		<div class="fadein">
 			<div id="slide1" class="rotimg" style="display: block;">
 				<span class="infoblock-left-container"></span>
-				<span class="infoblock-left-content">Display something on a LEFT-SIDE overlay.</span>
+				<span class="infoblock-left-content">Display something on a LEFT-SIDE overlay.<br /><br />
+				<form><input type="button" value="Call to Action" onclick="showOverlay('call-to-action'); return false;" ></form></span>
 				<a href="#"><img src="img/slide1.jpg" /></a>
 			</div>
 			<div id="slide2" class="rotimg">
@@ -496,6 +500,15 @@
 	<div class="lightbox-overlay"></div>
 	<div class="lightbox-container" onclick="hideLightbox(); return false;">
 		<div class="lightbox-image-container"><img id="lightbox-final-image" src="" border="0" /></div>
+	</div>
+	<div class="standard-overlay"></div>
+	<div class="standard-overlay-container">
+		<div id="call-to-action">
+			<h3>Put a contact form, or some other call to action here.  Possibly a good place for an email signup form.</h3>
+			<form>
+			<input type="button" value="Close Overlay" onclick="hideOverlay(); return false;" >
+			</form>
+		</div>
 	</div>
  </div>
  

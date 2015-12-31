@@ -237,8 +237,8 @@ li {
 	float: right;
 	position: relative;
 	overflow: hidden;
-	padding-top: 18px;
-	padding-right: 18px;
+	padding-top: 10px;
+	padding-right: 10px;
 	}
 
 .hamburger img {
@@ -330,46 +330,61 @@ li {
 
 .top-nav div ul.nav-links li {
 	float: none;	
+	clear: both;
+	
 }
 
 .top-nav div ul.nav-links li a {
 	display: block;
 	color: white;	
 	float: left;
-	line-height: 80px;	
+	line-height: 50px;	
 	text-decoration: none;
 	font-size: 20px;
 }
 
+
+/* Spacing for Nav Links across the top */
 
 .top-nav div ul.nav-links-center li a {
 	margin: 0px 60px 0px 30px;
 }
 
 .top-nav div ul.nav-links-left li a {
-	margin: 0px 70px 0px 0px;
+	margin: 0px 0px 0px 40px;
+}
+
+/* Sub Menu */
+.top-nav div ul.nav-links-left li:hover ul li a {
+	margin: 0px 40px 0px 40px;
 }
 
 .top-nav div ul.nav-links-right li a {
-	margin: 0px 0px 0px 70px;
+	margin: 0px 40px 0px 70px;
 }
 
 .top-nav div ul.nav-links li ul {
-	margin-left: -30px;
+	display: block;
+	margin-left: 40px;
 }
 
 .top-nav div ul.nav-links li ul li a {
-	margin-left: 30px;
+	margin-left: 40px;
 }
 
+/* end */
 
 
-.top-nav div ul.nav-links li ul {
-	display: none;
-}
 
 
-@media screen and (min-width: 740px) {
+#nav-links {
+	background-color: #222;
+	opacity: 1;
+	width: 100%;
+	padding-bottom: 10px;
+	}
+
+@media screen and (min-width: 960px) {
 
 	.top-nav div ul.nav-icons {
 		display: block;
@@ -378,7 +393,18 @@ li {
 
 }
 
-@media screen and (min-width: 600px) {
+
+
+
+@media screen and (min-width: 800px) {
+
+	
+	#nav-links {
+		background-color: #333;
+		opacity: 1;
+		width: auto;
+		padding-bottom: 0px;
+	}
 
 	.top-nav div ul {
 		display: block;
@@ -399,15 +425,28 @@ li {
 	.top-nav div ul.nav-links li {
 		float: left;
 		overflow: visible;
+		clear: none;
+	}
+
+	.top-nav div ul.nav-links li a {
+		display: block;
+		color: white;	
+		float: left;
+		line-height: 80px;	
+		text-decoration: none;
+		font-size: 20px;
 	}
 
 	.top-nav div ul.nav-links li ul {
-		display: block;
+		display: none;
 		visibility: hidden;
 		position: absolute;
 		z-index: 10000;
 		opacity:0;
+		margin-left: -30px;
 	}
+
+	
 	
 	.top-nav div ul.nav-links li:hover ul {
 		display: block;
@@ -431,8 +470,8 @@ li {
 	
 	.top-nav div ul.nav-links li:hover ul li {
 		display: block;		
-		float: none;		
-		padding: 10px 20px 10px 0px;
+		float: none;	
+		padding: 10px 0px 10px 0px;
 		overflow: hidden;
 	}
 
@@ -449,7 +488,44 @@ li {
 }
 
 
+/* Logo Setup */
 
+.logo {
+
+	display: block;
+	float: none;
+	margin: 0 auto;
+
+	}
+
+.logo img {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 70%;
+	max-width: 300px;
+	line-height: 80px;
+	vertical-align: middle;
+	}
+	
+
+@media screen and (min-width: 800px) {
+	.logo {
+		display: block;
+		position: relative;
+		float: left;
+		overflow: hidden;
+		height: 80px;
+		}
+	.logo img {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 0;
+		margin-left: 0;
+		width: 300px;
+	}
+}
 
 /* Grid Layouts */
 

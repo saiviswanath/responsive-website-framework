@@ -1,7 +1,36 @@
+function showNav()
+{
+
+	if ($("#nav-links").is(":visible"))
+	{
+		$("#nav-links").slideUp("fast", function() {
+		    // Animation complete.
+		});
+	} else {
+		$("#nav-links").slideDown("fast", function() {
+		    // Animation complete.
+		});
+	}
+	
+
+}
+
 function scrollToTop()
 {
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 }
+
+
+$(document).ready(function(){
+	$( window ).resize(function() {
+	  if ($(window).width()>=800)
+	  {
+		$("#nav-links").show();
+	  } else {
+		  $("#nav-links").hide();
+	  }
+	});
+});
 
 
 // Code here adapted from what I learned here:

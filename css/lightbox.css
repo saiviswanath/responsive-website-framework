@@ -35,10 +35,10 @@
 	display: block;
 	position: fixed;
 	width: auto;
-	top: 10%;
-	margin: 0 auto;
+	top: 10%;	
 	max-height: 80%;
 	max-width: 80%;
+	margin: 0 auto;
 	}
 
 .lightbox-image {

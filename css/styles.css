@@ -245,6 +245,7 @@ li {
 	display: block;
 	height: 40px;
 	width: 40px;
+	margin-top: 10px;
 }
 
 
@@ -500,11 +501,10 @@ li {
 
 .logo img {
 	display: block;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	margin-left: 10px;
-	width: 70%;
-	max-width: 300px;
+	width: 300px;
 	line-height: 80px;
 	vertical-align: middle;
 	}
@@ -520,7 +520,7 @@ li {
 		}
 	.logo img {
 		display: block;
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-bottom: 0;
 		margin-left: 0;
 		width: 300px;

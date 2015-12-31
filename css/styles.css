@@ -756,6 +756,10 @@ li {
 	margin: 0 auto;
 	}
 
+
+
+
+
 /* Folding Entities */
 
 .folder-file {
@@ -799,6 +803,9 @@ li {
 		opacity: 0.2;
 		}
 }
+
+
+
 
 /* Form elements */
 
@@ -898,4 +905,48 @@ input[type="submit"]:hover,input[type="button"]:hover {
 /* To override an initially hidden element */
 .show {
 	display: block;
+	}
+
+
+/* Buckets */
+
+.bucket {	
+	padding: 20px;
+	text-align: center;
+	background-color: #3d6898;
+	color: white;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bucket.left {
+	margin-right: 0px;
+	}
+
+.bucket.right {
+	margin-left: 0px;
+	}
+
+.bucket h1, .bucket h2, .bucket h3, .bucket h4, .bucket h5, .bucket h6, .bucket p  {
+	text-align: center;
+	}
+
+@media screen and (min-width: 600px) {
+	
+
+	.bucket.left {
+		margin-right: 20px;
+		}
+
+	.bucket.right {
+		margin-left: 20px;
+		}
+
+	
+}
+
+
+.rounded {
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
 	}

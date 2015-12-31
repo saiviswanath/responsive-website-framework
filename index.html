@@ -102,6 +102,19 @@
 	<h4 class="center"><a href="https://github.com/selticesystems/responsive-website-framework" target=_blank>View this project on GitHub</a></h4>
 	<p>&nbsp;</p>
 
+	<h1 class="center">Simple Call to Action Overlay</h1>
+	<div class="spans" style="max-width: 350px;">		
+		<div class="span">
+			<div class="spanrow">
+				<div class="spancol">
+					<form><input type="button" value="Call to Action" onclick="showOverlay('call-to-action'); return false;" ></form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p>&nbsp;</p>
+
 	<!-- Grid Layouts -->
 	<h1 class="center">Full Width Grid Layouts</h1>
 	<div class="spans">
@@ -504,10 +517,12 @@
 	<div class="standard-overlay"></div>
 	<div class="standard-overlay-container">
 		<div id="call-to-action">
-			<h3>Put a contact form, or some other call to action here.  Possibly a good place for an email signup form.</h3>
-			<form>
-			<input type="button" value="Close Overlay" onclick="hideOverlay(); return false;" >
-			</form>
+			<div>
+				<h3>Put a contact form, or some other call to action here.  Possibly a good place for an email signup form.</h3>
+				<form>
+				<input type="button" value="Close Overlay" onclick="hideOverlay(); return false;" >
+				</form>
+			</div>
 		</div>
 	</div>
  </div>

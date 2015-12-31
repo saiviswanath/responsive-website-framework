@@ -354,12 +354,45 @@ li {
 
 .top-nav div ul.nav-icons {
 	display: none;
+	background-color: #222;
+	width: 100%;	
+	padding-top: 20px;
+	padding-bottom: 5px;
 	}
 
-.top-nav div ul.nav-icons li {
-	float: left;
-	margin: 25px 0px 0px 0px;
+.top-nav div ul.nav-icons li:first-child {
+	margin-left: 35px;
 }
+.top-nav div ul.nav-icons li {
+		float: left;
+		margin: 0px 0px 0px 0px;
+	}
+
+@media screen and (min-width: 960px) {
+	
+	.top-nav div ul.nav-icons {
+		display: none;
+		background-color: #333;
+		width: auto;
+		margin-left: 0px;
+		padding: 0;
+	}
+
+	.top-nav div ul.nav-icons li:first-child {
+		margin-left: 0px;
+	}
+
+	.top-nav div ul.nav-icons li {
+		float: left;
+		margin: 25px 0px 0px 0px;
+	}
+
+	
+}
+
+
+
+
 
 .top-nav div ul.nav-icons li a img {
 	margin-left: 5px;
@@ -418,19 +451,13 @@ li {
 	height: auto;
 	}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
 
 	#nav-links {
 		overflow: visible;
 		height: auto;
 	}
 
-}
-
-
-
-
-@media screen and (min-width: 800px) {
 
 	
 	#nav-links {
@@ -556,7 +583,7 @@ li {
 	}
 	
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
 	.logo {
 		display: block;
 		position: relative;

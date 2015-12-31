@@ -7,19 +7,19 @@ function showNav()
 		$("#nav-links").slideUp("fast", function() {
 		    // Animation complete.
 			
-			if ($(".top-nav-fixed-spacer"))
+			if (document.getElementById('top-nav-fixed'))
 			{
 				$(".top-nav-fixed-spacer").css("display", "block");
 				$(".top-nav-fixed").css("position", "fixed");
-
 			}
 			
 		});
+		$(".nav-icons").slideUp("fast");
 	} else {
 		$("#nav-links").slideDown("fast", function() {
 		    // Animation complete.
 			
-			if ($(".top-nav-fixed-spacer"))
+			if (document.getElementById('top-nav-fixed'))
 			{
 				$(".top-nav-fixed-spacer").css("display", "none");
 				$(".top-nav-fixed").css("position", "relative");
@@ -27,6 +27,7 @@ function showNav()
 			
 			
 		});
+		$(".nav-icons").slideDown("fast");
 	}
 	
 
@@ -52,13 +53,15 @@ $(document).ready(function(){
 	  if ($(window).width() != windowWidth)
 	  {
 	  
-		  if ($(window).width()>=800)
+		  if ($(window).width()>=960)
 		  {
 			$("#nav-links").show();
 			$("#nav-links li ul").hide();
+			$(".nav-icons").show();
 		  } else {
 			$("#nav-links").hide();
 			$("#nav-links li ul").show();
+			$(".nav-icons").hide();
 		  }
 
 	  }
@@ -67,7 +70,10 @@ $(document).ready(function(){
 	// not sure how or where I learned this hack, but got it from another app I wrote...
 	// it's supposed to bind a click or a touch, but using a flag so not at the same time.
 	var didTouch = false;
-	$(".hamburger").bind("touchstart click", function() {
+	$(".hamburger").bind("touchstart click", function(event) {
+
+		event.preventDefault();
+
 		if (!didTouch)
 		{
 			scrollToTop("fast");
@@ -84,7 +90,7 @@ $(document).ready(function(){
 
 		$( "#nav-links li" ).mouseenter(function() {
 					
-			if ($(window).width()>=800)
+			if ($(window).width()>=960)
 			{				
 				if ($( this ).has("ul"))
 				{					
@@ -96,7 +102,7 @@ $(document).ready(function(){
 
 		$( "#nav-links li" ).mouseleave(function() {
 					
-			if ($(window).width()>=800)
+			if ($(window).width()>=960)
 			{
 				if ($( this ).has("ul"))
 				{
@@ -108,9 +114,11 @@ $(document).ready(function(){
 
 	
 	// If on mobile, initially hide the nav links
-	if ($(window).width()<800)
+	if ($(window).width()<960)
 			{
-			$("#nav-links").hide();
+			$("#nav-links").hide();		
+			
+			$("#nav-icons").hide();
 			}
 	
 	 

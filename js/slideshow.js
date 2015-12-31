@@ -60,8 +60,7 @@ $(window).load(function() { //start after HTML, images have loaded
 		
 		imgCount = $('#slideshow-container').attr("alt")*1;
 
-		$('#slideshowDot-'+onImg).css("opacity", "1");
-		createInterval();
+		$('#slideshowDot-'+onImg).css("opacity", "1");		
 
 		function updateSliderHeight() { 
 				$(".fadein").css("height", $("#slide"+(onImg+1)).height() + "px");				
@@ -77,6 +76,15 @@ $(window).load(function() { //start after HTML, images have loaded
 		$( window ).resize(function() {
 		  updateSliderHeight();
 		});
+
+		if (imgCount>1)
+		{
+			createInterval();
+		} else {
+			$("#slideshow-arrow-left").hide();
+			$("#slideshow-arrow-right").hide();
+			$("#slideshow-dots").hide();
+		}
 			   
  
 });

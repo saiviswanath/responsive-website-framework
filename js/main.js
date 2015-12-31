@@ -1,36 +1,81 @@
 function showNav()
 {
+	// Mobile display of navigation.
 
 	if ($("#nav-links").is(":visible"))
 	{
 		$("#nav-links").slideUp("fast", function() {
 		    // Animation complete.
+			
+			if ($(".top-nav-fixed-spacer"))
+			{
+				$(".top-nav-fixed-spacer").css("display", "block");
+				$(".top-nav-fixed").css("position", "fixed");
+
+			}
+			
 		});
 	} else {
 		$("#nav-links").slideDown("fast", function() {
 		    // Animation complete.
+			
+			if ($(".top-nav-fixed-spacer"))
+			{
+				$(".top-nav-fixed-spacer").css("display", "none");
+				$(".top-nav-fixed").css("position", "relative");
+			}
+			
+			
 		});
 	}
 	
 
 }
 
-function scrollToTop()
+function scrollToTop(speed)
 {
-	$("html, body").animate({ scrollTop: 0 }, "slow");
+	if (speed==null)
+	{
+		speed = "slow";
+	}
+	$("html, body").animate({ scrollTop: 0 }, speed);
 }
 
+var windowWidth = 0;
 
 $(document).ready(function(){
+
+	windowWidth = $(window).width();
+	
 	$( window ).resize(function() {
-	  if ($(window).width()>=800)
+	  // Prevents this from firing because of a scroll on mobile.
+	  if ($(window).width() != windowWidth)
 	  {
-		$("#nav-links").show();
-		$("#nav-links li ul").hide();
-	  } else {
-		  $("#nav-links").hide();
-		  $("#nav-links li ul").show();
+	  
+		  if ($(window).width()>=800)
+		  {
+			$("#nav-links").show();
+			$("#nav-links li ul").hide();
+		  } else {
+			$("#nav-links").hide();
+			$("#nav-links li ul").show();
+		  }
+
 	  }
+	});
+
+	// not sure how or where I learned this hack, but got it from another app I wrote...
+	// it's supposed to bind a click or a touch, but using a flag so not at the same time.
+	var didTouch = false;
+	$(".hamburger").bind("touchstart click", function() {
+		if (!didTouch)
+		{
+			scrollToTop("fast");
+			showNav();
+			didTouch = true;
+			setTimeout(function(){ didTouch = false; }, 250);
+		}
+		return false;
 	});
 
 	
@@ -40,10 +85,9 @@ $(document).ready(function(){
 		$( "#nav-links li" ).mouseenter(function() {
 					
 			if ($(window).width()>=800)
-			{
-				console.log("here enter");
+			{				
 				if ($( this ).has("ul"))
-				{
+				{					
 					$( this ).find("ul").eq(0).slideDown("fast");				
 				}
 			}
@@ -54,7 +98,6 @@ $(document).ready(function(){
 					
 			if ($(window).width()>=800)
 			{
-				console.log("here leave");
 				if ($( this ).has("ul"))
 				{
 					$( this ).find("ul").eq(0).slideUp("fast");				
@@ -63,10 +106,13 @@ $(document).ready(function(){
 				  
 		});
 
+	
+	// If on mobile, initially hide the nav links
 	if ($(window).width()<800)
 			{
 			$("#nav-links").hide();
 			}
+	
 	 
 
 });

@@ -222,6 +222,24 @@ li {
 }
 
 
+.top-nav-fixed-spacer {
+		display: block;
+		position: relative;
+		background-color: #333;
+		width: auto;
+		height: 80px;
+	}
+
+	.top-nav-fixed {
+		position: fixed;
+		width: 100%;
+		z-index: 1000000;
+		top: 0;
+		}
+	
+
+
+@media screen and (min-width: 600px) {
 
 	.top-nav-fixed-spacer {
 		display: block;
@@ -237,6 +255,8 @@ li {
 		z-index: 1000000;
 		top: 0;
 		}
+
+}
 
 
 .top-nav div {
@@ -254,6 +274,7 @@ li {
 	overflow: hidden;
 	padding-top: 10px;
 	padding-right: 10px;
+	cursor: pointer;
 	}
 
 .hamburger img {
@@ -393,14 +414,16 @@ li {
 	opacity: 1;
 	width: 100%;
 	padding-bottom: 10px;
+	overflow: hidden;
+	height: auto;
 	}
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 800px) {
 
-	.top-nav div ul.nav-icons {
-		display: block;
+	#nav-links {
+		overflow: visible;
+		height: auto;
 	}
-
 
 }
 
@@ -503,6 +526,14 @@ li {
 
 }
 
+@media screen and (min-width: 960px) {
+
+	.top-nav div ul.nav-icons {
+		display: block;
+	}
+
+
+}
 
 /* Logo Setup */
 

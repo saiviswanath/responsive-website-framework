@@ -1,7 +1,7 @@
 # Responsive Website Framework
 by Seltice Systems LLC
 
-Version 0.01 (beta)
+Version 0.1 (beta)
 
 Copyright 2015, MIT License
 

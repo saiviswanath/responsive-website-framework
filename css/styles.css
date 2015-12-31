@@ -371,7 +371,7 @@ li {
 }
 
 /* Sub Menu */
-.top-nav div ul.nav-links-left li:hover ul li a {
+.top-nav div ul.nav-links-left li ul li a {
 	margin: 0px 40px 0px 40px;
 }
 
@@ -384,12 +384,7 @@ li {
 	margin-left: 40px;
 }
 
-.top-nav div ul.nav-links li ul li a {
-	margin-left: 40px;
-}
-
 /* end */
-
 
 
 
@@ -463,9 +458,9 @@ li {
 	}
 
 	
-	
-	.top-nav div ul.nav-links li:hover ul {
-		display: block;
+	/* :hover */
+	.top-nav div ul.nav-links li ul {
+		display: none;
 		visibility: visible;
 		position: absolute;
 		background-color: #333;	
@@ -476,26 +471,31 @@ li {
 		-webkit-transition: opacity .25s ease-in-out;
 	}
 
-	.top-nav div ul.nav-links li:hover ul li {
+	/* :hover */
+	.top-nav div ul.nav-links li ul li {
 		line-height: 40px;
 	}
 
-	.top-nav div ul.nav-links li:hover ul li a {
+	/* :hover */
+	.top-nav div ul.nav-links li ul li a {
 		line-height: 40px;
 	}
 	
-	.top-nav div ul.nav-links li:hover ul li {
+	/* :hover */
+	.top-nav div ul.nav-links li ul li {
 		display: block;		
 		float: none;	
 		padding: 10px 0px 10px 0px;
 		overflow: hidden;
 	}
 
-	.top-nav div ul.nav-links li:hover ul li:hover {
+	/* :hover */
+	.top-nav div ul.nav-links li ul li:hover {
 		background-color: #000;
 	}
 
-	.top-nav div ul.nav-links li:hover ul li:hover a {
+	/* :hover */
+	.top-nav div ul.nav-links li ul li:hover a {
 		background-color: #000;
 	}
 

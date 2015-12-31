@@ -26,11 +26,51 @@ $(document).ready(function(){
 	  if ($(window).width()>=800)
 	  {
 		$("#nav-links").show();
+		$("#nav-links li ul").hide();
 	  } else {
 		  $("#nav-links").hide();
+		  $("#nav-links li ul").show();
 	  }
 	});
+
+	
+
+		$("#nav-links").show();
+
+		$( "#nav-links li" ).mouseenter(function() {
+					
+			if ($(window).width()>=800)
+			{
+				console.log("here enter");
+				if ($( this ).has("ul"))
+				{
+					$( this ).find("ul").eq(0).slideDown("fast");				
+				}
+			}
+				  
+		});
+
+		$( "#nav-links li" ).mouseleave(function() {
+					
+			if ($(window).width()>=800)
+			{
+				console.log("here leave");
+				if ($( this ).has("ul"))
+				{
+					$( this ).find("ul").eq(0).slideUp("fast");				
+				}
+			}
+				  
+		});
+
+	if ($(window).width()<800)
+			{
+			$("#nav-links").hide();
+			}
+	 
+
 });
+
 
 
 // Code here adapted from what I learned here:

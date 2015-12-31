@@ -62,28 +62,31 @@
 	</div>
   
     <!-- Slideshow -->
-	<div id="slideshow-container" alt="4">
+	<div id="slideshow-container" alt="5">
 		<div class="fadein">
-			<div id="slide1" class="rotimg" style="display: block;">
-				<span class="infoblock-left-container"></span>
-				<span class="infoblock-left-content">Display something on a LEFT-SIDE overlay.<br /><br />
-				<form><input type="button" value="Call to Action" onclick="showOverlay('call-to-action'); return false;" ></form></span>
+			<div id="slide1" class="rotimg" style="display: block;">				
 				<a href="#"><img src="img/slide1.jpg" /></a>
 			</div>
 			<div id="slide2" class="rotimg">
-				<span class="infoblock-right-container"></span>
-				<span class="infoblock-right-content">Display something on a RIGHT-SIDE overlay.</span>
-				<a href="#"><img src="img/slide2.jpg"  /></a>
+				<span class="infoblock-left-container"></span>
+				<span class="infoblock-left-content">LEFT-SIDE overlay.<br /><br />
+				<form><input type="button" value="Call to Action" onclick="showOverlay('call-to-action'); return false;" ></form></span>
+				<a href="#"><img src="img/slide2.jpg" /></a>
 			</div>
 			<div id="slide3" class="rotimg">
-				<span class="infoblock-top-container"></span>
-				<span class="infoblock-top-content">Or display something on a TOP overlay.</span>
+				<span class="infoblock-right-container"></span>
+				<span class="infoblock-right-content">RIGHT-SIDE overlay.</span>
 				<a href="#"><img src="img/slide3.jpg"  /></a>
 			</div>
 			<div id="slide4" class="rotimg">
-				<span class="infoblock-bottom-container"></span>
-				<span class="infoblock-bottom-content">Or display something on a BOTTOM overlay (Put dots-on-top).</span>
+				<span class="infoblock-top-container"></span>
+				<span class="infoblock-top-content">TOP overlay.</span>
 				<a href="#"><img src="img/slide4.jpg"  /></a>
+			</div>
+			<div id="slide5" class="rotimg">
+				<span class="infoblock-bottom-container"></span>
+				<span class="infoblock-bottom-content">BOTTOM overlay (Put dots-on-top).</span>
+				<a href="#"><img src="img/slide5.jpg"  /></a>
 			</div>
 		</div>
 		<div id="slideshow-arrow-left" class="slide-arrow slide-arrow-square slide-arrow-square-left"><a href="#" onclick="slideSwitch(-1); return false;"><img src="img/arrow_left_square_white.png" border="0" width="50" height="100" /></a></div>
@@ -93,6 +96,7 @@
 			<a href="#" onclick="slideSwitch(0,1); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-1" /></a>
 			<a href="#" onclick="slideSwitch(0,2); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-2" /></a>
 			<a href="#" onclick="slideSwitch(0,3); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-3" /></a>
+			<a href="#" onclick="slideSwitch(0,4); return false;"><img src="img/dot_white.png" border="0" width="16" height="16" id="slideshowDot-4" /></a>
 		</div>
 	</div>
 	<script language="javascript" src="js/slideshow.js" ></script>
